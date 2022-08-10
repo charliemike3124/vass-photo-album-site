@@ -10,9 +10,11 @@ const mutations = {
 };
 
 const actions = {
-  async GetPhotos({ commit }, id) {
+  async GetPhotosByAlbumId({ commit, state }, id) {
+    //TODO - Validate that the provided id exists in the API.
+    //TODO - Store images in local storage to avoid hitting the endpoint innecesarily.
     const photos = await photoService.GetImagesByAlbumId(id);
-    commit("SetPhotos", photos);
+    commit("SetPhotos", [...state.photos, ...photos]);
   },
 };
 

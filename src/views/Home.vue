@@ -14,12 +14,6 @@ export default {
   name: "Home",
 
   components: { HomeHeader, HomeLayout, HomeLanding, HomeFooter, HomePhotos },
-
-  computed: {},
-
-  methods: {},
-
-  mounted() {},
 };
 </script>
 <style lang="less">

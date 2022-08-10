@@ -1,12 +1,15 @@
 .btn-row {
+  > button:first-child {
+    color: white !important;
+  }
   .v-btn {
-    font-size: 0.85rem;
-    text-transform: none;
-    font-weight: 400;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    color: rgb(85, 85, 85);
   }
 }
 
 .img-row {
   padding-left: 150px !important;
+  @media only screen and (max-width: 1100px) {
+    padding-left: 75px !important;
+  }
 }
