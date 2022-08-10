@@ -3,15 +3,18 @@
 </template>
 
 <script>
+import { mapActions, mapState } from "vuex";
 export default {
-  name: "HomeHeader",
+  name: "HomePhotos",
 
   data: () => ({}),
 
   methods: {},
+
+  created() {},
 };
 </script>
 
 <style lang="less">
-@import (less) "../styles/components/homeHeader.less";
+@import (less) "../../styles/components/homePhotos.less";
 </style>

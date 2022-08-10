@@ -7,7 +7,7 @@ Vue.use(Vuetify);
 export default new Vuetify({
   theme: {
     options: {
-      customProperties: false,
+      customProperties: true,
       minifyTheme,
       themeCache: {
         get: (key) => localStorage.getItem(key),

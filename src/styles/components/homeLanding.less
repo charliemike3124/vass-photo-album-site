@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 800px;
+  color: white;
+  > div:first-child {
+    letter-spacing: 10px;
+    font-size: 2.7rem;
+    font-weight: 500;
+  }
+  > div:nth-child(2) {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  > div:last-child {
+    .v-btn {
+      color: var(--v-primary-base);
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+  }
+}
