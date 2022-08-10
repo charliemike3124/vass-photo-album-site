@@ -1,22 +1,22 @@
 <template>
-    <div class="grey lighten-5"></div>
+  <HomeLayout>
+    <template #header><HomeHeader /></template>
+  </HomeLayout>
 </template>
 
 <script>
-// @ is an alias to /src
+import { HomeHeader, HomeLayout } from "@/components";
 
 export default {
-    name: "Home",
+  name: "Home",
 
-    components: {},
+  components: { HomeHeader, HomeLayout },
 
-    computed: {},
+  computed: {},
 
-    data: () => ({}),
+  methods: {},
 
-    methods: {},
-
-    mounted() {},
+  mounted() {},
 };
 </script>
 <style lang="less">

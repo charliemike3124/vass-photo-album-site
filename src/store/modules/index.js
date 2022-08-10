@@ -1,2 +1,2 @@
-import example from "./exampleModule";
-export { example };
+import photos from "./photosModule";
+export { photos };

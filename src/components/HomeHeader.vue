@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "Template",
+  name: "HomeHeader",
 
   data: () => ({}),
 
@@ -13,5 +13,5 @@ export default {
 </script>
 
 <style lang="less">
-@import (less) "../styles/components/componentTemplate.less";
+@import (less) "../styles/components/homeHeader.less";
 </style>
