@@ -13,7 +13,13 @@ const actions = {
   async GetPhotosByAlbumId({ commit, state }, id) {
     //TODO - Validate that the provided id exists in the API.
     //TODO - Store images in local storage to avoid hitting the endpoint innecesarily.
-    const photos = await photoService.GetImagesByAlbumId(id);
+    const response = await photoService.GetImagesByAlbumId(id);
+    const photos = response.map((photo) => ({
+      id: photo.id,
+      thumbnailUrl: photo.thumbnailUrl,
+      title: photo.title,
+      url: photo.url,
+    }));
     commit("SetPhotos", [...state.photos, ...photos]);
   },
 };

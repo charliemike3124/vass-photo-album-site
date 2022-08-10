@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-column justify-center align-center my-12">
+  <div class="d-flex flex-column justify-center align-center my-16">
     <div class="mb-8">
       <span class="grey--text">
         ©2016 -
@@ -7,7 +7,7 @@
         All Rights Reserved
       </span>
     </div>
-    <div class="mb-8">
+    <div class="">
       <v-btn icon :color="iconColor" x-small>
         <v-icon>mdi-facebook</v-icon>
       </v-btn>
