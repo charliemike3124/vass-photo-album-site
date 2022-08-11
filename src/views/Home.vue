@@ -2,8 +2,8 @@
   <HomeLayout>
     <template #header><HomeHeader /></template>
     <template #landing><HomeLanding /></template>
-    <template #photos><HomePhotos /></template>
-    <template #footer><HomeFooter /></template>
+    <template #photos><HomePhotos data-aos="fade-up" /></template>
+    <template #footer><HomeFooter data-aos="fade-up" /></template>
   </HomeLayout>
 </template>
 
@@ -16,6 +16,3 @@ export default {
   components: { HomeHeader, HomeLayout, HomeLanding, HomeFooter, HomePhotos },
 };
 </script>
-<style lang="less">
-@import (less) "../styles/views/home.less";
-</style>

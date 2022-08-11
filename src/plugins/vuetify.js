@@ -17,13 +17,6 @@ export default new Vuetify({
     themes: {
       light: {
         primary: "#fc758c",
-        secondary: "#00AEEF",
-        accent: "#00AEEF",
-        anchor: "#00AEEF",
-        error: "#FF5252",
-        info: "#2196F3",
-        success: "#4CAF50",
-        warning: "#FFC107",
       },
     },
   },
