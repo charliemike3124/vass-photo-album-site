@@ -2,9 +2,9 @@
   <div class="d-flex flex-column justify-center">
     <div class="align-self-center py-12">
       <v-btn icon class="mr-4">
-        <v-icon color="primary">mdi-view-grid</v-icon>
+        <v-icon color="primary" @click="gridLayout = true">mdi-view-grid</v-icon>
       </v-btn>
-      <v-btn icon class="mr-4">
+      <v-btn icon class="mr-4" @click="gridLayout = false">
         <v-icon color="primary">mdi-view-stream</v-icon>
       </v-btn>
     </div>
@@ -21,10 +21,10 @@
     </div>
     <div class="photo-wrapper py-12">
       <v-row>
-        <v-col v-for="(photo, index) in currentPhotos" :key="index">
+        <v-col v-for="(photo, index) in currentPhotos" :key="index" :class="gridLayout ? '' : 'photo-centered'">
           <v-img
             :src="photo.thumbnailUrl"
-            width="284"
+            :width="gridLayout ? 284 : 450"
             :class="photo.gridFixer ? '' : 'photo'"
             @click="openPhotoModal(photo)"
           />
@@ -85,6 +85,7 @@ export default {
       loadingImages: false,
       filter: null,
       selectedPhoto: null,
+      gridLayout: true,
     };
   },
 
